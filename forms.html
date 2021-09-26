@@ -12,7 +12,7 @@
                     <strong>Простая форма поиска с вариантами:</strong>
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="text" name="text" pattern="^[А-Я][а-я]{1-10}">
+                        <input type="text" name="text" maxlength="10">
                         <input type="submit" value="Искать"><br>
                         <input type="radio" name="radio" value="на сайт">на сайте
                         <input type="radio" name="radio" value="в google">в google
@@ -24,7 +24,7 @@
                     <strong>Простая форма поиска с вариантами:</strong>
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="text" name="text" autofocus>
+                        <input type="text" name="text" autofocus required>
                         <input type="submit" value="Искать"><br>
                         <input type="radio" name="radio1" value="на сайт">на сайт
                         <input type="radio" name="radio1" value="в google">в google
@@ -38,8 +38,8 @@
                     <strong>Простая форма авторизации:</strong>
                     <fieldset>
                         <legend>Авторизуйтесь</legend>
-                        <input type="text" name="name" autofocus>Логин<br>
-                        <input type="password" name="pass" autofocus>Пароль<br>
+                        <input type="text" name="name" required>Логин<br>
+                        <input type="password" name="pass" required>Пароль<br>
                         <input type="checkbox" name="check">Оставаться в системе<br>
                         <input type="submit" value="Войти">
                     </fieldset>
@@ -65,8 +65,8 @@
                     <strong>Отзыв:</strong>
                     <fieldset>
                         <legend>Оставьте Ваш отзыв</legend>
-                        <input type="text" name="name">Имя<br>
-                        <input type="email" name="mail">e-mail<br>
+                        <input type="text" name="name" required>Имя<br>
+                        <input type="email" name="mail" required>e-mail<br>
                         <textarea name="textarea">
                             Форма отправки
                         </textarea><br>
@@ -106,14 +106,14 @@
         </tr>
         <tr>
             <td>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank" enctype="multipart/form-data">
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank" enctype="multipart/form-data">
                     <strong>Загрузка файла на сервер:</strong>
                     <fieldset>
                         <legend>Upload</legend>
                         Файл<br>
                         <input type="file" name="file"><br>
                         Срок хранения(года):<br>
-                        <input type="text" name="date" pattern="">
+                        <input type="text" name="date">
                         <input type="submit" value="загрузить">
                     </fieldset>
                 </form>
