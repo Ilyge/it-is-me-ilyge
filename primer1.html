@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+        font-size: 30px;
+        }
+        .monday,.tuesday,.wednesday,.thursday,.friday,.saturday{
+        border: solid black 2px;
+        background: silver;
+        color: gray;
+        border-radius: 10px;
+        float: left;
+        width: 180px;
+        cursor: pointer;
+        position: relative;
+        }
+        .monday:hover{
+        background-color: gray;
+        color: silver;
+        }
+        .tuesday:hover{
+        background-color: gray;
+        color: silver;
+        }
+        .wednesday:hover{
+        background-color: gray;
+        color: silver;
+        }
+        .thursday:hover{
+        background-color: gray;
+        color: silver;
+        }
+        .friday:hover{
+        background-color: gray;
+        color: silver;
+        }
+        .saturday:hover{
+        background-color: gray;
+        color: silver;
+        }
+        .menu{
+        width: 180px;
+        display: none;
+        }
+        .menu>div{
+        border: solid black 2px;
+        background: silver;
+        color: gray;
+        border-radius: 10px;
+        cursor: pointer;
+        }
+        .monday:hover .menu{
+        display: block;
+        position: absolute;
+        top:20%
+        z-index:1;
+        }
+        .tuesday:hover .menu{
+        display: block;
+        position: absolute;
+        top:20%
+        z-index:1;
+        }
+        .wednesday:hover .menu{
+        display: block;
+        position: absolute;
+        top:20%
+        z-index:1;
+        }
+        .thursday:hover .menu{
+        display: block;
+        position: absolute;
+        top:20%
+        z-index:1;
+        }
+        .friday:hover .menu{
+        display: block;
+        position: absolute;
+        top:20%
+        z-index:1;
+        }
+        .saturday:hover .menu{
+        display: block;
+        position: absolute;
+        top:20%;
+        z-index:1;
+        }
+        @media all and (max-width:1119px){
+            .monday,.tuesday,.wednesday,.thursday,.friday,.saturday{
+                float: none;
+            }
+            .monday:hover .menu{
+                left: 100%;
+                top: 0px;
+            }
+            .tuesday:hover .menu{
+                left: 100%;
+                top: 0px;
+            }
+            .wednesday:hover .menu{
+                left: 100%;
+                top: 0px;
+            }
+            .thursday:hover .menu{
+                left: 100%;
+                top: 0px;
+            }
+            .friday:hover .menu{
+                left: 100%;
+                top: 0px;
+            }
+            .saturday:hover .menu{
+                left: 100%;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="monday">Понедельник
+        <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div class="tuesday">Вторник
+        <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div class="wednesday">Среда
+        <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div class="thursday">Четверг
+        <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div class="friday">Пятница
+        <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div class="saturday">Суббота
+        <div class="menu">
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+</body>
+</html>
