@@ -8,7 +8,7 @@
         body{
         font-size: 30px;
         }
-        .monday,.tuesday,.wednesday,.thursday,.friday,.saturday{
+        .days{
         border: solid black 2px;
         background: silver;
         color: gray;
@@ -18,102 +18,34 @@
         cursor: pointer;
         position: relative;
         }
-        .monday:hover{
-        background-color: gray;
-        color: silver;
-        }
-        .tuesday:hover{
-        background-color: gray;
-        color: silver;
-        }
-        .wednesday:hover{
-        background-color: gray;
-        color: silver;
-        }
-        .thursday:hover{
-        background-color: gray;
-        color: silver;
-        }
-        .friday:hover{
-        background-color: gray;
-        color: silver;
-        }
-        .saturday:hover{
+        .days:hover{
         background-color: gray;
         color: silver;
         }
         .menu{
         width: 180px;
         display: none;
+        transition: 1s;
         }
         .menu>div{
         border: solid black 2px;
-        background: silver;
-        color: gray;
+        background: gray;
+        color: silver;
         border-radius: 10px;
         cursor: pointer;
         }
-        .monday:hover .menu{
+        .days:hover .menu{
         display: block;
         position: absolute;
         top:20%
         z-index:1;
-        }
-        .tuesday:hover .menu{
-        display: block;
-        position: absolute;
-        top:20%
-        z-index:1;
-        }
-        .wednesday:hover .menu{
-        display: block;
-        position: absolute;
-        top:20%
-        z-index:1;
-        }
-        .thursday:hover .menu{
-        display: block;
-        position: absolute;
-        top:20%
-        z-index:1;
-        }
-        .friday:hover .menu{
-        display: block;
-        position: absolute;
-        top:20%
-        z-index:1;
-        }
-        .saturday:hover .menu{
-        display: block;
-        position: absolute;
-        top:20%;
-        z-index:1;
+        transition: 5s;
         }
         @media all and (max-width:1119px){
-            .monday,.tuesday,.wednesday,.thursday,.friday,.saturday{
+            .days{
                 float: none;
             }
-            .monday:hover .menu{
-                left: 100%;
-                top: 0px;
-            }
-            .tuesday:hover .menu{
-                left: 100%;
-                top: 0px;
-            }
-            .wednesday:hover .menu{
-                left: 100%;
-                top: 0px;
-            }
-            .thursday:hover .menu{
-                left: 100%;
-                top: 0px;
-            }
-            .friday:hover .menu{
-                left: 100%;
-                top: 0px;
-            }
-            .saturday:hover .menu{
+            .days:hover .menu{
                 left: 100%;
                 top: 0px;
             }
@@ -121,42 +53,42 @@
     </style>
 </head>
 <body>
-    <div class="monday">Понедельник
+    <div class="days">Понедельник
         <div class="menu">
             <div>Завтрак</div>
             <div>Обед</div>
             <div>Ужин</div>
         </div>
     </div>
-    <div class="tuesday">Вторник
+    <div class="days">Вторник
         <div class="menu">
             <div>Завтрак</div>
             <div>Обед</div>
             <div>Ужин</div>
         </div>
     </div>
-    <div class="wednesday">Среда
+    <div class="days">Среда
         <div class="menu">
             <div>Завтрак</div>
             <div>Обед</div>
             <div>Ужин</div>
         </div>
     </div>
-    <div class="thursday">Четверг
+    <div class="days">Четверг
         <div class="menu">
             <div>Завтрак</div>
             <div>Обед</div>
             <div>Ужин</div>
         </div>
     </div>
-    <div class="friday">Пятница
+    <div class="days">Пятница
         <div class="menu">
             <div>Завтрак</div>
             <div>Обед</div>
             <div>Ужин</div>
         </div>
     </div>
-    <div class="saturday">Суббота
+    <div class="days">Суббота
         <div class="menu">
             <div>Завтрак</div>
             <div>Обед</div>
